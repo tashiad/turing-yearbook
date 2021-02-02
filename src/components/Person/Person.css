@@ -1,1 +1,23 @@
+h3 {
+  color: #FF6548;
+}
 
+.quote {
+  font-style: italic;
+}
+
+.superlative {
+  color: #6696EC;
+  font-weight: bold;
+}
+
+.staff {
+  background-color: white;
+  border-radius: 5px;
+  padding: 5%;
+}
+
+.staffImg {
+  max-height: 150px;
+  max-width: 90%;
+}
