@@ -15,11 +15,14 @@ class App extends Component {
     return (
       <div className="App">
       <header className="App-header">
-      <h1>Turing Yearbook</h1>
+        <h1>Turing Yearbook</h1>
       </header>
-        YOUR CODE GOES HERE
+      <main>
+        <h2>Staff</h2>
+        <Cohort staff={this.state.staff}/>
+      </main>
       </div>
-    );
+    )
   }
 }
 
