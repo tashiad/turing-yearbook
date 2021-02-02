@@ -22,7 +22,6 @@ class App extends Component {
         <h2>Staff</h2>
         <Cohort staff={this.state.staff}/>
         <h2>Students</h2>
-        <Cohort students={this.state.students}/>
       </main>
       </div>
     )
