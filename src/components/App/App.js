@@ -20,6 +20,17 @@ class App extends Component {
     })
   }
 
+  // removeStudent = (id) => {
+  //   const filteredStudents = this.state.students.filter(student => {
+  //     return student.id != id
+  //   })
+  //
+  //   this.setState({
+  //     staff: people.staff,
+  //     students: filteredStudents
+  //   })
+  // }
+
   render() {
     return (
       <div className="App">
@@ -30,6 +41,7 @@ class App extends Component {
         <Cohort
           staff={this.state.staff}
           students={this.state.students}
+          // removeStudent={this.removeStudent}
         />
       </div>
     )
