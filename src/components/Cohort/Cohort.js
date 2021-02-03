@@ -32,4 +32,4 @@ function Cohort({ staff, students }) {
   )
 }
 
-export default Cohort;
+export default Cohort
