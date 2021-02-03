@@ -5,7 +5,7 @@ import './App.css';
 
 class App extends Component {
   constructor() {
-    super();
+    super()
     this.state = {
       staff: people.staff,
       students: people.students

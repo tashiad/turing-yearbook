@@ -3,41 +3,30 @@ import Person from '../Person/Person';
 import './Cohort.css';
 
 function Cohort({ staff, students }) {
-  const staffCards = staff.map(member => {
-    return (
-      <Person
+  function cardProps(prop) {
+    return prop.map(member => {
+      return (
+        <Person
         key={member.id}
         id={member.id}
         photo={member.photo}
         name={member.name}
         quote={member.quote}
         superlative={member.superlative}
-      />
-    )
-  })
-
-  const studentCards = students.map(member => {
-    return (
-      <Person
-        key={member.id}
-        id={member.id}
-        photo={member.photo}
-        name={member.name}
-        quote={member.quote}
-        superlative={member.superlative}
-      />
-    )
-  })
+        />
+      )
+    })
+  }
 
   return (
     <main>
       <h2>Staff</h2>
       <section>
-        {staffCards}
+        {cardProps(staff)}
       </section>
       <h2>Students</h2>
       <section>
-        {studentCards}
+        {cardProps(students)}
       </section>
     </main>
   )
