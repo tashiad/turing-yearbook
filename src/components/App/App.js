@@ -15,14 +15,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <header className="App-header">
-        <h1>Turing Yearbook</h1>
-      </header>
-      <main>
-        <h2>Staff</h2>
-        <Cohort staff={this.state.staff}/>
-        <h2>Students</h2>
-      </main>
+        <header className="App-header">
+          <h1>Turing Yearbook</h1>
+        </header>
+        <Cohort
+          staff={this.state.staff}
+          students={this.state.students}
+        />
       </div>
     )
   }

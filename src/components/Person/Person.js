@@ -1,18 +1,14 @@
 import React from 'react';
 import './Person.css';
 
-function Person(props) {
+function Person({ photo, name, quote, superlative }) {
   return (
-    props.staff.map(member => {
-      return (
-        <div className="member" key={member.id}>
-          <img src={member.photo} className="memberImg" alt=''/>
-          <h3>{member.name}</h3>
-          <p className="quote">{member.quote}</p>
-          <p className="superlative">{member.superlative}</p>
-        </div>
-      )
-    })
+    <div className="member">
+      <img src={photo} className="memberImg" alt=''/>
+      <h3>{name}</h3>
+      <p className="quote">{quote}</p>
+      <p className="superlative">{superlative}</p>
+    </div>
   )
 }
 
