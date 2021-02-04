@@ -3,7 +3,7 @@ import Person from '../Person/Person';
 import './Cohort.css';
 
 function Cohort({ staff, students, removeStudent }) {
-  function cardProps(prop) {
+  function cardProps(prop, type) {
     return prop.map(member => {
       return (
         <Person
@@ -13,8 +13,8 @@ function Cohort({ staff, students, removeStudent }) {
         name={member.name}
         quote={member.quote}
         superlative={member.superlative}
-        // type={prop}
-        // removeStudent={removeStudent}
+        type={type}
+        removeStudent={removeStudent}
         />
       )
     })
@@ -24,11 +24,11 @@ function Cohort({ staff, students, removeStudent }) {
     <main>
       <h2>Staff</h2>
       <section>
-        {cardProps(staff)}
+        {cardProps(staff, 'staff')}
       </section>
       <h2>Students</h2>
       <section>
-        {cardProps(students)}
+        {cardProps(students, 'students')}
       </section>
     </main>
   )
